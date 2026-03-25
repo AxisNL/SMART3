@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>SMART3 - {% block subtitle%}{% endblock subtitle %}</title>
+    <script src="{% static 'node_modules/@webcomponents/custom-elements/custom-elements.min.js' %}"></script>
+    <script src="{% static 'node_modules/clarity-icons/clarity-icons.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'node_modules/clarity-icons/clarity-icons.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'node_modules/clarity-ui/clarity-ui.min.css' %}"/>
+    {% block custom_head %}
+    {% endblock custom_head %}
+</head>
+<body>
+<div class="main-container">
+    <div class="alert alert-app-level"></div>
+    <header class="header header-4">
+        <div class="branding"><a href="/" class="nav-link"> <span class="title">SMART3</span> </a></div>
+        <div class="header-nav">
+            <a href="/" class="{% if request.resolver_match.url_name == "home" %}active {% endif %}nav-link"><span class="nav-text">Dashboard</span></a>
+            <a href="/hypervisors" class="{% if request.resolver_match.url_name == "hypervisors" %}active {% endif %}nav-link"><span class="nav-text">Hypervisors</span></a>
+            <a href="/servers" class="{% if request.resolver_match.url_name == "servers" %}active {% endif %}nav-link"><span class="nav-text">Servers</span></a>
+        </div>
+        <div class="header-actions">
+<div class="header-actions">
+        <a href="/accounts/logout" class="nav-link nav-icon-text">
+
+            <span class="nav-text">{{ user.get_username }} (logout)</span>
+        </a>
+
+    </div>
+
+        </div>
+    </header>
+    <div class="content-container">
+        <div class="content-area">
+           {% block content_area %}
+            {% endblock  %}
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+

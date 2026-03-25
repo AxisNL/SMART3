@@ -1,0 +1,241 @@
+{% extends "base.html" %}
+{% load static %}
+{% block subtitle%}Home{% endblock subtitle %}
+{% block content_area %}
+
+<!-- CONTENT AREA -->
+
+<h1>Monitoring and logging</h1>
+<!-- ROW OF CARDS FOR NAV -->
+<div class="row">
+
+    <!-- CARD  -->
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3"><a href="https://tel-cac-01.telco-mgmt.nl/"
+                                                        class="card clickable">
+        <div class="card-img"><img src="{% static 'images/cacti.png' %}"></div>
+        <div class="card-block">
+            <p class="card-text"> Cacti </p>
+        </div>
+    </a></div>
+    <!-- /CARD  -->
+
+    <!-- CARD  -->
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3"><a href="https://tel-mon-01.telco-mgmt.nl/"
+                                                        class="card clickable">
+        <div class="card-img"><img src="{% static 'images/checkmk.svg' %}"></div>
+        <div class="card-block">
+            <p class="card-text"> Checkmk </p>
+        </div>
+    </a></div>
+    <!-- /CARD  -->
+
+    <!-- CARD  -->
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a href="http://tel-ping-01.telco-mgmt.nl/"
+                                                        class="card clickable" target="_blank">
+        <div class="card-img"><img src="{% static 'images/smokeping.jpg' %}"></div>
+        <div class="card-block">
+            <p class="card-text"> Smokeping</p>
+        </div>
+    </a>
+    </div>
+    <!-- /CARD  -->
+
+    <!-- CARD  -->
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a href="https://tel-log-01.telco-mgmt.nl/"
+                                                        class="card clickable" target="_blank">
+        <div class="card-img"><img src="{% static 'images/graylog.svg' %}"></div>
+        <div class="card-block">
+            <p class="card-text"> Graylog</p>
+        </div>
+    </a>
+    </div>
+    <!-- /CARD  -->
+
+
+    <!-- CARD  -->
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3"><a href="https://tel-pup-01.telco-mgmt.nl/"
+                                                        class="card clickable">
+        <div class="card-img"><img src="{% static 'images/puppet.svg'%}"></div>
+        <div class="card-block">
+            <p class="card-text"> Puppetboard </p>
+        </div>
+    </a></div>
+    <!-- /CARD  -->
+
+    <!-- CARD  -->
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a
+            href="http://tel-graf-01.telco-mgmt.nl:3000/?orgId=1"
+            class="card clickable" target="_blank">
+        <div class="card-img"><img src="{% static 'images/grafana.png'%}"></div>
+        <div class="card-block">
+            <p class="card-text"> Grafana</p>
+        </div>
+    </a>
+    </div>
+    <!-- /CARD  -->
+
+</div>
+
+<!-- ROW OF CARDS FOR NAV -->
+<h1>Management and administration</h1>
+<div class="row">
+
+    <!-- CARD -->
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3"><a href="https://tel-wek-01.telco-mgmt.nl/"
+                                                        class="card clickable">
+        <div class="card-img"><img src="{% static 'images/wekan.svg' %}"></div>
+        <div class="card-block">
+            <p class="card-text"> Wekan</p>
+        </div>
+    </a></div>
+    <!-- /CARD -->
+
+    <!-- CARD  -->
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3"><a href="https://tel-git-01.telco-mgmt.nl/"
+                                                        class="card clickable">
+        <div class="card-img"><img src="{% static 'images/gitlab.svg' %}"></div>
+        <div class="card-block">
+            <p class="card-text"> Gitlab </p>
+        </div>
+    </a></div>
+    <!-- /CARD  -->
+
+    <!-- CARD  -->
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a href="https://tel-nbx-01.telco-mgmt.nl/"
+                                                        class="card clickable" target="_blank">
+        <div class="card-img"><img src="{% static 'images/netbox.png' %}"></div>
+        <div class="card-block">
+            <p class="card-text"> Netbox </p>
+        </div>
+    </a>
+    </div>
+    <!-- /CARD  -->
+
+    <!-- CARD  -->
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3"><a href="http://rt.telco-mgmt.nl/"
+                                                        class="card clickable">
+        <div class="card-img"><img src="{% static 'images/rt.png' %}"></div>
+        <div class="card-block">
+            <p class="card-text"> RT </p>
+        </div>
+    </a></div>
+    <!-- /CARD  -->
+
+    <!-- CARD  -->
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3"><a href="https://docs.telco-mgmt.nl/"
+                                                        class="card clickable">
+        <div class="card-img"><img src="{% static 'images/docs-logo.png' %}"></div>
+        <div class="card-block">
+            <p class="card-text"> Documentatie </p>
+        </div>
+    </a></div>
+    <!-- /CARD  -->
+
+    <!-- CARD  -->
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a
+            href="https://tel-pwm-01.telco-mgmt.nl/" class="card clickable"
+            target="_blank">
+        <div class="card-img"><img src="{% static 'images/pwm.jpg' %}"></div>
+        <div class="card-block">
+            <p class="card-text"> PWM</p>
+        </div>
+    </a>
+    </div>
+    <!-- /CARD  -->
+
+    <!-- CARD  -->
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a
+            href="https://guacamole.telco-mgmt.nl/guacamole/" class="card clickable"
+            target="_blank">
+        <div class="card-img"><img src="{% static 'images/guacamole.png' %}"></div>
+        <div class="card-block">
+            <p class="card-text"> Guacamole (remote desktop en ssh)</p>
+        </div>
+    </a>
+    </div>
+    <!-- /CARD  -->
+
+</div>
+<!-- /ROW OF CARS FOR NAV -->
+
+<h1>Overigen</h1>
+<table class="table">
+    <thead>
+    <tr>
+        <th class="left">Server name</th>
+        <th class="left">Nbx</th>
+        <th class="left">Rol/software</th>
+        <th class="left">Adressering</th>
+        <th class="left">Authenticatie</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="left"><a href="https://mailscanner1.website-server.nl:8006"
+                            target="_blank">mailscanner1</a>
+        </td>
+        <td class="left">
+            <a href="https://tel-nbx-01.telco-mgmt.nl/virtualization/virtual-machines/57/"><img
+                    src="{% static 'images/netbox.png' %}" width="20" height="20"></a>
+        </td>
+        <td class="left">Proxmox Mail Gateway</td>
+        <td class="left">
+            ipv4/ipv6 (whitelist on device)
+        </td>
+        <td class="left">
+            lokale authenticatie (zie keepass)
+        </td>
+    </tr>
+    <tr>
+        <td class="left"><a href="https://mailscanner2.website-server.nl:8006"
+                            target="_blank">mailscanner2</a>
+        </td>
+        <td class="left">
+            <a href="https://tel-nbx-01.telco-mgmt.nl/virtualization/virtual-machines/56/"><img
+                    src="{% static 'images/netbox.png' %}" width="20" height="20"></a>
+        </td>
+        <td class="left">Proxmox Mail Gateway</td>
+        <td class="left">
+            ipv4/ipv6 (whitelist on device)
+        </td>
+        <td class="left">
+            lokale authenticatie (zie keepass)
+        </td>
+    </tr>
+    <tr>
+        <td class="left"><a href="https://tel-bak-03.telco-mgmt.nl:8007/"
+                            target="_blank">tel-bak-03</a>
+        </td>
+        <td class="left">
+            <a href="https://tel-nbx-01.telco-mgmt.nl/virtualization/virtual-machines/68/"><img
+                    src="{% static 'images/netbox.png' %}" width="20" height="20"></a>
+        </td>
+        <td class="left">Proxmox Backup Server</td>
+        <td class="left">
+            ipv6-only (whitelist on firewall tel-frw-01)
+        </td>
+        <td class="left">
+            lokale authenticatie (zie keepass)
+        </td>
+    </tr>
+    <tr>
+        <td class="left"><a href="https://tel-bak-04.telco-mgmt.nl:8007/"
+                            target="_blank">tel-bak-04</a>
+        </td>
+        <td class="left">
+            <a href="https://tel-nbx-01.telco-mgmt.nl/virtualization/virtual-machines/68/"><img
+                    src="{% static 'images/netbox.png' %}" width="20" height="20"></a>
+        </td>
+        <td class="left">Proxmox Backup Server</td>
+        <td class="left">
+            ipv6-only (whitelist on firewall tel-frw-01)
+        </td>
+        <td class="left">
+            lokale authenticatie (zie keepass)
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<!-- /CONTENT AREA -->
+{% endblock %}

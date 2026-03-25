@@ -1,0 +1,11 @@
+<html>
+<body>
+<form action="https://{{ server }}:10001/" method="POST" name="form">
+       <input type=hidden name=csflogin value="{{ username }}">
+       <input type=hidden name=csfpassword value="{{ password }}">
+</form>
+<script>
+       document.form.submit();
+</script>
+</body>
+</html>

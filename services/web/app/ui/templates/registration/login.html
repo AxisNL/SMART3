@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>SMART3</title>
+    <script src="{% static 'node_modules/@webcomponents/custom-elements/custom-elements.min.js' %}"></script>
+    <script src="{% static 'node_modules/clarity-icons/clarity-icons.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'node_modules/clarity-icons/clarity-icons.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'node_modules/clarity-ui/clarity-ui.min.css' %}"/>
+</head>
+<body>
+
+<div class="login-wrapper">
+    <form class="login" method="post">
+        {% csrf_token %}
+        <section class="title">
+            Telco Dashboard
+            <h5 class="hint">Log in using your AD account</h5>
+        </section>
+        <div class="login-group">
+
+            <a href="{% url 'oidc_authentication_init' %}" class="btn btn-primary mt-2">Log in met OIDC</a>
+
+            <p>&nbsp;</p>
+            <div align="center">
+                Problemen met inloggen? Log in in
+                <a href="https://auth.telco-mgmt.nl/realms/Telco/account/">Keycloak</a>, en probeer je
+                password te veranderen (onder Account security &gt; Signing in &gt; My Password)
+
+            </div>
+
+    </form>
+</div>
+</form>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,13 @@
+<html>
+<body>
+<form action="https://{{ server }}/login/index.php" method="POST" name="form">
+       <input type=hidden name="username" value="{{ username }}">
+       <input type=hidden name="password" value="{{ password }}">
+       <input type=hidden name="remember" value="1">
+       <input type=hidden name="login" value="Login">
+</form>
+<script>
+       document.form.submit();
+</script>
+</body>
+</html>

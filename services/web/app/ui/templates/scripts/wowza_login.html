@@ -1,0 +1,14 @@
+<html>
+<body>
+<form action="https://{{ server }}:8089/enginemanager/j_spring_security_check?wowza-page-redirect=" method="POST" name="form">
+  <input type=hidden name=referer value="/">
+  <input type=hidden name=j_username value="{{ username }}">
+  <input type=hidden name=j_password value="{{ password }}">
+  <input type=hidden name=authType value="digest">
+  <input type=hidden name=host value="http://localhost:8087">
+</form>
+<script>
+       document.form.submit();
+</script>
+</body>
+</html>
